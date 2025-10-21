@@ -1,0 +1,68 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFB9B7;
+    background-image: url('https://wallpapers.com/images/hd/pompompurin-with-red-hearts-ueigep54sofurk3x.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+header, footer{
+    text-align: center;
+    padding: 10px;
+    color: #FB5848;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+#main-title{
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    word-spacing: 10px;
+    text-shadow: 2px 2px 5px #FF7569;
+}
+.intro{
+    font-size: 1.5em;
+    margin-top: 0;
+    text-decoration: underline;
+}
+.first-section img{
+    display: block;
+    width: 25vw
+    height: 25vh;
+}
+
+div img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+a[target="_blank"]{
+    color: blue;
+    font-weight: bold;
+}
+a[href="/internal-page"]{
+    color: red;
+    font-weight: bold;
+
+}
+a:hover{
+    color: green;
+}
+.container ul {
+    list-style-type: none; /* removes bullets */
+    clear: left; /* removes effect of float:left */
+    padding: 0; /* removes the spaces surrounding the li/s */
+    }
+    
+.container ul li {
+    width: 150px;
+    padding: 5px;
+    background-color: cornsilk;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0px 25px;
+    }
