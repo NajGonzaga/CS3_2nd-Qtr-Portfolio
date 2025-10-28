@@ -1,0 +1,117 @@
+<html>
+<head>
+    <style> 
+    
+        body {
+            background-image: linear-gradient(110deg  , #fc51a7, #ffe5b4, #6a11cb, #2575fc);
+            background-size: 200% 200%;
+            animation: gradient-bg 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        @keyframes gradient-bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card {
+            position: relative;
+            width: 450px;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #fff0f5, #ffe5b4, #ff69b4);
+            background-size: 300% 300%;
+            animation: card-gradient 8s ease infinite;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            transition: background 2s ease-in-out, box-shadow 2s ease-in-out, color 1.5s ease-in-out, text-shadow 1.5s ease-in-out;
+            color: #4b0082;
+            text-shadow:
+                0 0 6px #7b2ff7,
+                0 0 12px #6a11cb,
+                0 0 25px #6a11cb,
+                0 0 40px #2575fc;
+        }
+
+        @keyframes card-gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card:hover {
+            background: linear-gradient(135deg, #6a11cb, #2575fc, #a18cd1);
+            background-size: 300% 300%;
+            animation: hover-gradient 10s ease-in-out infinite;
+            box-shadow: 0 0 25px rgba(162, 124, 255, 0.5);
+            color: #ff66b2;
+            text-shadow:
+                0 0 5px #ff66b2,
+                0 0 10px #ff66b2,
+                0 0 20px #ffd166,
+                0 0 30px #ffd166;
+        }
+
+        @keyframes hover-gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 16px;
+            background: linear-gradient(270deg, #f07fc4, #ffed9a, #ff69b4);
+            background-size: 400% 400%;
+            animation: outerGlow 8s ease-in-out infinite;
+            z-index: -1;
+            filter: blur(12px); 
+            transition: background 2s ease-in-out, filter 1.5s ease-in-out;
+        }
+
+        .card:hover::before {
+            background: linear-gradient(270deg, #6a11cb, #2575fc, #a18cd1, #6a11cb);
+            background-size: 400% 400%;
+            animation: hover-border 10s ease-in-out infinite;
+            filter: blur(16px);
+        }
+
+        @keyframes outerGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes hover-border {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        p {
+            margin: 10px 0;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /* I js copy pasted old animations from other practice files I made hehehe */
+    </style>
+</head>
+<body>
+    <div class="card">
+        <p><b>゛Name:</b> ✧˖Naj༄.°</p>
+        <p><b>゛Favourite hobby:</b> Playing games and doomscrolling(ᵕ—ᴗ—)</p>
+        <p><b>゛Fun fact:</b> i have 4 siblings...!ദ്ദി(ᵔᗜᵔ)</p>
+    </div>
+</body>
+</html>
